@@ -39,7 +39,6 @@ public class SpringBootBootstrapLiveTest {
         Response response = RestAssured.given()
                 .auth().basic("admin", "admin")
                 .get(API_ROOT);
-        System.out.println(response.body().print());
         assertEquals(HttpStatus.OK.value(), response.getStatusCode());
     }
 

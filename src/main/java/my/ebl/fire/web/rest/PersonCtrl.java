@@ -21,9 +21,6 @@ import java.util.List;
 @RequestMapping("/persons")
 public class PersonCtrl {
     Logger logger = LoggerFactory.getLogger(PersonCtrl.class);
-    public PersonCtrl() {
-        System.out.println("PersonCtrl.PersonCtrl");
-    }
 
     @Autowired
     private PersonService personService;
